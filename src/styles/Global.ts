@@ -24,8 +24,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    width: 100%;
+    height: 100vh;
     background: var(--white);
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   body, input, textarea, button {
