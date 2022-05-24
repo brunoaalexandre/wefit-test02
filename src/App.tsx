@@ -1,5 +1,11 @@
+import { NewToDoInput } from "./components/NewToDoInput";
+import { GlobalStyles } from "./styles/Global";
+
 export function App() {
   return (
-    <h1>Rolou muito</h1>
-  )
+    <>
+      <NewToDoInput />
+      <GlobalStyles />
+    </>
+  );
 }
