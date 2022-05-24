@@ -1,11 +1,12 @@
-import { NewToDoInput } from "./components/NewToDoInput";
+import { ToDoContainer } from "./components/ToDoContainer";
+import { TodoProvider } from "./hooks/useTodos";
 import { GlobalStyles } from "./styles/Global";
 
 export function App() {
   return (
-    <>
-      <NewToDoInput />
+    <TodoProvider>
+      <ToDoContainer />
       <GlobalStyles />
-    </>
+    </TodoProvider>
   );
 }
